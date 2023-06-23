@@ -8,6 +8,6 @@ Node JS
 
 # Function Support
 
-uuidv4() => return random id.
+randomId() => return random id.
 
 sleep(ms) => stop ms times. 

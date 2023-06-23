@@ -1,4 +1,4 @@
-function uuidv4() {
+export function randomId() {
     return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) =>
         (
         c ^
@@ -7,11 +7,11 @@ function uuidv4() {
     );
 }
 
-function sleep(ms) {
+export function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 export default {
-    uuidv4,
+    randomId,
     sleep
 }
